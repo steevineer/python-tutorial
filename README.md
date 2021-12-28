@@ -72,3 +72,6 @@ python manage.py runserver
 ```
 - Open the browser at localhost:8000 to see the running website.
 
+## Create Polling App
+
+- For detail https://docs.djangoproject.com/en/4.0/intro/tutorial01/#creating-the-polls-app
