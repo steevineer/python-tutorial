@@ -30,4 +30,4 @@ mkdir -p ~/dev/mypy
 code ~/dev/mypy
 ```
 - Check out some basic setups for `vscode` https://code.visualstudio.com/docs/editor/codebasics
-
+- Install plugin for `python` tooling within `vscode` https://marketplace.visualstudio.com/items?itemName=ms-python.python
