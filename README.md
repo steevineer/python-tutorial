@@ -75,3 +75,6 @@ python manage.py runserver
 ## Create Polling App
 
 - For detail https://docs.djangoproject.com/en/4.0/intro/tutorial01/#creating-the-polls-app
+
+## Additional Resources
+- https://realpython.com/
