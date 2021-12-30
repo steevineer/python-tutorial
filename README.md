@@ -24,6 +24,7 @@ python3 --version
 ```sh
 brew install visual-studio-code
 ```
+- Ensure `autosave` is enabled https://stackoverflow.com/a/56480358  
 - Create and open a workspace with `vscode`
 ```
 mkdir -p ~/dev/mypy
