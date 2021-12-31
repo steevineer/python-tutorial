@@ -72,7 +72,7 @@ python manage.py runserver
 
 ## Should show ...Starting development server at http://127.0.0.1:8000/...
 ```
-- Open the browser at [localhost:8000]() to see the running website.
+- Open the browser at [localhost:8000](localhost:8000) to see the running website.
 
 ## Create Polling App
 
