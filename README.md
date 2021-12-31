@@ -77,6 +77,48 @@ python manage.py runserver
 ## Create Polling App
 
 - For detail https://docs.djangoproject.com/en/4.0/intro/tutorial01/#creating-the-polls-app
+- Create new `module` for `polls` app in the same location of `manage.py`
+```
+cd mysite
+
+cat manage.py ## making sure at same folder with manage.py
+
+python manage.py startapp polls
+``` 
+- Open the file `polls/views.py` and put the following `Python` code in it:
+```py
+from django.http import HttpResponse
+
+def index(request):
+    return HttpResponse("Hello, world. You're at the polls index.")
+```
+- Create a file called `urls.py` (under same folder `polls`) with code:
+```py
+from django.contrib import admin
+from django.urls import include, path
+
+urlpatterns = [
+    path('polls/', include('polls.urls')),
+    path('admin/', admin.site.urls),
+]
+``` 
+- Update `mysite/urls.py` (under folder `mysite`) with code:
+```py
+from django.contrib import admin
+from django.urls import include, path
+
+urlpatterns = [
+    path('polls/', include('polls.urls')),
+    path('admin/', admin.site.urls),
+]
+```
+- Restart the app (at root folder where `manage.py` located)
+```sh
+python manage.py runserver
+```
+- Go to http://localhost:8000/polls/ in your browser, and you should see the text “Hello, world. You’re at the polls index.”, which you defined in the index view.
+
+
 
 ## Additional Resources
 - https://realpython.com/
