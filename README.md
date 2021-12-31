@@ -17,7 +17,7 @@ python3 --version
 
 ## Should show Python 3.9.9
 ```
-
+---
 ## Visual Studio Code
 
 - Install `vscode` as code editor
@@ -32,7 +32,7 @@ code ~/dev/mypy
 ```
 - Check out some basic setups for `vscode` https://code.visualstudio.com/docs/editor/codebasics
 - Install plugin for `python` tooling within `vscode` https://marketplace.visualstudio.com/items?itemName=ms-python.python
-
+---
 ## Python Virtual Environment
 
 - Development for a `python` app usually requires downloading variety of third-party modules. 
@@ -48,7 +48,7 @@ python3 -m venv ~/dev/mypy/myenv
 source ~/dev/mypy/myenv/bin/activate
 ```
 - Use `deactivate` to exist the `virtual-env`
-
+---
 ## Initialize Django 
 - Create a `requirement.txt` file in the workspace location to download modules for `django` with following content:
 ```
@@ -73,7 +73,7 @@ python manage.py runserver
 ## Should show ...Starting development server at http://127.0.0.1:8000/...
 ```
 - Open the browser at [localhost](http://localhost:8000) to see the running website.
-
+---
 ## Create Polling App
 
 - For detail https://docs.djangoproject.com/en/4.0/intro/tutorial01/#creating-the-polls-app
@@ -118,7 +118,10 @@ python manage.py runserver
 ```
 - Go to http://localhost:8000/polls/ in your browser, and you should see the text “Hello, world. You’re at the polls index.”, which you defined in the index view.
 
-
-
+---
+## Polling App - Database - [steps](database_README.md) 
+---  
+## Polling App - API - [steps](api_README.md) 
+---  
 ## Additional Resources
 - https://realpython.com/
