@@ -52,7 +52,7 @@ python3 -m venv ~/dev/mypy/myenv
 ```
 source ~/dev/mypy/myenv/bin/activate
 ```
-- Use `deactivate` to exist the `virtual-env`
+- Use `deactivate` to exit the `virtual-env`
 ---
 ## Initialize Django 
 - Create a `requirements.txt` file in the workspace location to download modules for `django` with following content:
@@ -72,7 +72,7 @@ django-admin startproject myapp
 ```
 - Test run the `app` locally:
 ```
-cd mysite
+cd myapp
 python manage.py runserver
 
 ## Should show ...Starting development server at http://127.0.0.1:8000/...
@@ -84,7 +84,7 @@ python manage.py runserver
 - For detail https://docs.djangoproject.com/en/4.0/intro/tutorial01/#creating-the-polls-app
 - Create new `module` for `polls` app in the same location of `manage.py`
 ```
-cd mysite
+cd myapp
 
 cat manage.py ## making sure at same folder with manage.py
 
