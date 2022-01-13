@@ -107,7 +107,7 @@ urlpatterns = [
     path('', views.index, name='index'),
 ]
 ``` 
-- Update `mysite/urls.py` (under folder `mysite`) with code:
+- Update `myapp/urls.py` (under folder `myapp`) with code:
 ```py
 from django.contrib import admin
 from django.urls import include, path
