@@ -68,7 +68,7 @@ pip install -r requirements.txt
 - If `pip` is outdated, a message with instruction to upgrade should display.
 - Generate a new `django` app at the same location of workspace:
 ```
-django-admin startproject mysite
+django-admin startproject myapp
 ```
 - Test run the `app` locally:
 ```
