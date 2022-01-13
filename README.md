@@ -18,6 +18,11 @@ python3 --version
 ## Should show Python 3.9.9
 ```
 ---
+## Zsh 
+```sh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+---
 ## Visual Studio Code
 
 - Install `vscode` as code editor
@@ -50,7 +55,7 @@ source ~/dev/mypy/myenv/bin/activate
 - Use `deactivate` to exist the `virtual-env`
 ---
 ## Initialize Django 
-- Create a `requirement.txt` file in the workspace location to download modules for `django` with following content:
+- Create a `requirements.txt` file in the workspace location to download modules for `django` with following content:
 ```
 Django>=3.0,<4.0
 shortuuid>=1.0.1
@@ -94,12 +99,12 @@ def index(request):
 ```
 - Create a file called `urls.py` (under same folder `polls`) with code:
 ```py
-from django.contrib import admin
-from django.urls import include, path
+from django.urls import path
+
+from . import views
 
 urlpatterns = [
-    path('polls/', include('polls.urls')),
-    path('admin/', admin.site.urls),
+    path('', views.index, name='index'),
 ]
 ``` 
 - Update `mysite/urls.py` (under folder `mysite`) with code:
